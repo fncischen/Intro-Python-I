@@ -34,10 +34,10 @@ print(y)
 # the user entered into list x.
 
 x = input("Enter comma-separated numbers: ").split(',')
+print("Printing: ", x)
 
-# print(x)
-# g = [2,4,5]
+g = [2,4,5]
 # What do you need between the square brackets to make it work?
-y = [even for even in x if even%2 == 0]
-
+y = [even for even in x if float(even)%2 == 0]
 print(y)
+# print(y)
