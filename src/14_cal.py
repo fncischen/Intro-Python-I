@@ -22,3 +22,18 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+userInput = input("Insert the month and year in form, in commas:").split(",")
+print(userInput)
+
+def renderCalendar(month = 0, year = 0):
+	print(month, year)
+	print(calendar)
+	if (month == 0 and year == 0):
+		print(datetime.date)
+	elif (month != 0 and year == 0):
+		print(calendar.monthdatescalendar(datetime.year, month))
+	elif (month != 0 and year != 0):
+		print(calendar.monthdatescalendar(year, month))
+
+renderCalendar(float(userInput[0]), float(userInput[1]))
