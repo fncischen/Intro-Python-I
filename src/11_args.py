@@ -58,7 +58,9 @@ print(f3(8))     # Should print 9
 # key: baz, value: 12
 #
 # Google "python keyword arguments".
-
+def f4(**args):
+	for arg in args:
+		print('key: ', arg, 'value: ', args[arg])
 # YOUR CODE HERE
 
 # Should print
