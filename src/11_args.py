@@ -86,4 +86,4 @@ d = {
 
 # What thing do you have to add to make this work?
 
-f4("monster"= d["monster"], "hp"=d["hp"])
+f4(**d)
