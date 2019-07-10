@@ -32,8 +32,8 @@ def renderCalendar(month = 0, year = 0):
 	if (month == 0 and year == 0):
 		print(datetime.date)
 	elif (month != 0 and year == 0):
-		print(calendar.monthdatescalendar(datetime.year, month))
+		print(calendar.month(datetime.year, month))
 	elif (month != 0 and year != 0):
-		print(calendar.monthdatescalendar(year, month))
+		print(calendar.month(year, month))
 
-renderCalendar(float(userInput[0]), float(userInput[1]))
+renderCalendar(int(userInput[0]), int(userInput[1]))
